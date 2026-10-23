@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <script src="js/auth.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finalizar compra | CineBrasil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="icones/pagamento.svg?v=3">
+  <script src="js/pagamento.js" defer></script>
+<script src="js/motion.js" defer></script><script src="js/navigation.js" defer></script><script src="js/dialogos.js" defer></script><script src="js/cancelar-compra.js" defer></script></head>
+
+<body>
+  <header class="navbar"><a href="index.html" class="logo">🎬 CineBrasil</a>
+    <nav><a class="checkout-home" href="index.html">← Início</a><div class="conta-nav"><a class="nav-minha-conta" href="minha-conta.html" aria-label="Minha conta">👤 <span>Bruce Wayne</span></a><a class="nav-meus-pedidos" href="meus-pedidos.html">🎟️ <span>Meus pedidos</span></a></div><a class="miguel-link" href="https://www.linkedin.com/in/miguel-chagas-lopes/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Miguel Chagas"><span class="linkedin-mark" aria-hidden="true">in</span><span>LinkedIn de Miguel Chagas</span><span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="checkout-wrap">
+    <div class="checkout-head"><span class="titulo-pequeno">CINEBRASIL • CHECKOUT</span>
+      <h1>Finalize sua compra 🍿</h1>
+      <p>Seu lugar na próxima sessão está quase garantido.</p>
+      <div class="checkout-steps"><span class="done">✓ Filme e sessão</span><span class="done">✓ Assentos</span><span class="current">③ Pagamento</span></div>
+    </div>
+    <div class="checkout-layout">
+      <section class="checkout-panel">
+        <h2>Como deseja pagar?</h2>
+        <p class="muted">Escolha uma opção para continuar.</p>
+        <div class="metodos"><button type="button" class="metodo" data-metodo="cartao" aria-pressed="false"><span class="icone-metodo">💳</span><span><strong>Cartão</strong><small>Preencha os dados de apresentação</small></span></button><button type="button" class="metodo" data-metodo="pix" aria-pressed="false"><span class="icone-metodo">⚡</span><span><strong>PIX</strong><small>Visualize o QR Code</small></span></button></div>
+        <div id="area-pagamento" aria-live="polite">
+          <p class="selecione">👆 Selecione uma forma de pagamento acima.</p>
+        </div>
+        <p class="checkout-note">🔒 Ambiente de apresentação do projeto. Não insira informações bancárias reais. Nenhuma cobrança ou transferência é processada.</p>
+      </section>
+      <aside class="checkout-panel checkout-summary">
+        <div class="summary-title">🎟️ <h2>Seu pedido</h2>
+        </div>
+        <div id="resumo-pagamento"></div>
+        <button type="button" class="cb-cancel-order" id="cancelar-compra">✕ Cancelar pedido</button><div class="summary-footer">✨ Prepare a pipoca e aproveite a sessão!</div>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <h2>🎬 CineBrasil</h2>
+    <p>Sua guia de filmes e cinemas.</p>
+  </footer>
+</body>
+
+</html>

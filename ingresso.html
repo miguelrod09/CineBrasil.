@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <script src="js/auth.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Compra confirmada | CineBrasil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="icones/ingresso.svg?v=3">
+  <script src="js/ingresso.js" defer></script>
+<script src="js/motion.js" defer></script><script src="js/navigation.js" defer></script></head>
+
+<body>
+  <header class="navbar"><a class="logo" href="index.html">🎬 CineBrasil</a>
+    <nav><a href="index.html">
+        🎬 Início
+      </a><div class="conta-nav"><a class="nav-minha-conta" href="minha-conta.html" aria-label="Minha conta">👤 <span>Bruce Wayne</span></a><a class="nav-meus-pedidos" href="meus-pedidos.html">🎟️ <span>Meus pedidos</span></a></div><a class="miguel-link" href="https://www.linkedin.com/in/miguel-chagas-lopes/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Miguel Chagas"><span class="linkedin-mark" aria-hidden="true">in</span><span>LinkedIn de Miguel Chagas</span><span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="confirmation-wrap">
+    <div class="success-icon" aria-hidden="true">✓</div><span class="titulo-pequeno">TUDO CERTO!</span>
+    <h1>Compra confirmada! 🎉</h1>
+    <p class="confirmation-sub">Agora é só preparar a pipoca. Confira os detalhes do seu ingresso abaixo.</p>
+    <section class="ticket" id="ingresso-dados" aria-label="Detalhes do ingresso"></section>
+    <div class="confirmation-actions"><a class="btn-pagar" href="index.html">🎬 Explorar mais filmes</a><button class="btn-print" type="button" onclick="window.print()">🖨️ Imprimir ingresso</button></div>
+  </main>
+  <footer>
+    <h2>🎬 CineBrasil</h2>
+    <p>Sua guia de filmes e cinemas.</p>
+  </footer>
+</body>
+
+</html>
