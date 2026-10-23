@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <script src="../js/auth.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolher Assentos - CineBrasil</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="assentos.js" defer></script>
+
+  <link rel="icon" type="image/svg+xml" href="../icones/assentos.svg?v=3">
+
+
+<script src="../js/motion.js" defer></script><script src="../js/header-layout.js" defer></script><script src="../js/navigation.js" defer></script><script src="../js/dialogos.js" defer></script><script src="../js/cancelar-compra.js" defer></script></head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">🎬 Voltar</a>
+
+    <div class="conta-nav"><a class="nav-minha-conta" href="../minha-conta.html" aria-label="Minha conta">👤 <span>Bruce Wayne</span></a><a class="nav-meus-pedidos" href="../meus-pedidos.html">🎟️ <span>Meus pedidos</span></a></div><a class="miguel-link" href="https://www.linkedin.com/in/miguel-chagas-lopes/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Miguel Chagas"><span class="linkedin-mark" aria-hidden="true">in</span><span>LinkedIn de Miguel Chagas</span><span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="container">
+
+      <div class="titulo">
+        <span>RESERVA DE INGRESSOS</span>
+        <h1>Escolha seus assentos</h1>
+        <p id="filme">Filme</p>
+        <p id="sessao"></p>
+      </div>
+
+      <div class="cinema">
+
+        <div class="tela-cinema-nova"></div>
+        <p class="legenda-tela">TELA DO CINEMA</p>
+
+        <div id="mapa-assentos"></div>
+
+        <div class="legenda">
+          <div>
+            <span class="exemplo disponivel"></span>
+            Disponível
+          </div>
+          <div>
+            <span class="exemplo selecionado"></span>
+            Selecionado
+          </div>
+          <div>
+            <span class="exemplo ocupado"></span>
+            Ocupado
+          </div>
+        </div>
+
+      </div>
+
+      <div class="resumo">
+        <h2>Resumo da compra</h2>
+
+        <p>Assentos: <strong id="lugares">Nenhum</strong></p>
+        <p>Quantidade: <strong id="quantidade">0</strong></p>
+        <p>Valor unitário: R$ 30,00</p>
+
+        <div class="total">
+          <span>Total</span>
+          <strong id="valor">R$ 0,00</strong>
+        </div>
+
+        <button id="continuar" disabled>
+          Continuar para pagamento →
+        </button>
+
+        <button type="button" class="cb-cancel-order" id="cancelar-compra">✕ Cancelar pedido</button><a href="../index.html" class="voltar">← Voltar ao filme</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    🎬 CineBrasil
+    <p>Sua guia de filmes e cinemas.</p>
+  </footer>
+
+</body>
+
+</html>
